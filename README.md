@@ -20,13 +20,13 @@ URH project settings are as follows:
 | Bandwidth | 2.0 MHz |
 | Default Gain | 20 |
 
-The sample rate, if possible, should be adjusted to be a multiple of the baud rate in the future...  Also I should be reducing the bandwidth significantly to get better SNR.
+I should be reducing the bandwidth significantly to get better SNR.  The sample rate happens to be 32 times the baud rate - which is interesting because URH is set to 64 samples per symbol...
 
 URH demodulation settings in the Interpretation tab:
 | Setting | Value |
 | :------ | ----: |
 | Noise | 0.05 |
-| Center | 0.0 |
+| Center | -0.02 |
 | Samples/Symbol | 64 |
 | Error Tolerance | 1 |
 | Modulation | FSK |
@@ -54,6 +54,8 @@ Packets are sent as follows:
 Sequence number always increases by 6 within a sequence.  It is unknown why this difference is 6 and not 1 - There is a suspicion this may be related to Clear Connect's timeslots, but then I would expect to see offsets as the transmitter chooses a random timeslot?
 
 Strangely, for a "dim up" status from a lamp unit, the Packet Type changes as the value increases.  For example, starting at 0x88 when value is 0x0f, increasing by 1 for each press of the dim-up button, up to 0x8B when value is 0x83
+
+"On" and "Off" commands do not appear to use the Byte 13 value field - instead using Byte 12.
 
 When repeating a command (long press of a button), Pico remotes will send it as "unicast" with the same destination address as the source.
 
