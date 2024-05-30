@@ -36,6 +36,7 @@ Packets are sent as follows:
 - First, a preamble of alternating 10 bits is sent.  The number varies here from one device to another, I have yet to determine the minimum.
 - After the preample, all bytes are sent LSB-first with a 10 sequence appended to them.  For example, 0x01 will be sent as 1000000010, 0xFF will be sent as 1111111110
 - These bytes are structured as follows for a basic "control packet".  Pairing requests are significantly longer.  There does not appear to be a length field, packet length appears to be derived from the command byte value.
+
 | Byte(s) | Meaning/Value |
 | :---- | ----: |
 | 0 | Always 0xFA |
