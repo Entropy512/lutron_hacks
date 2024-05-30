@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<protocol>
+   <decodings>
+      <decoding>'Non Return To Zero (NRZ)', </decoding>
+      <decoding>'Non Return To Zero Inverted (NRZ-I)', 'Invert', </decoding>
+      <decoding>'Manchester I', 'Edge Trigger', </decoding>
+      <decoding>'Manchester II', 'Edge Trigger', 'Invert', </decoding>
+      <decoding>'Differential Manchester', 'Edge Trigger', 'Differential Encoding', </decoding>
+   </decodings>
+   <participants/>
+   <messages>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="1336" timestamp="1589594696.8477783" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011000000000101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111000000010100000110110" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="278227" timestamp="1589594696.8478057" bits="10101010101010101010101010101010101010101111111110010111111001111011101101000110011000001010000000100011010010111100001000111110100000000010001000001000000000101101100010100000001000000000100011001110001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110000010011010011100101111111" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="1356" timestamp="1589594696.8478327" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011000110000101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111011010100101011010110" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="277907" timestamp="1589594696.8478582" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011001001000101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111010110100100111100010" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="1349" timestamp="1589594696.8478837" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011000011000101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111001101001100101000110" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="278233" timestamp="1589594696.84791" bits="101010101010101010101010101010101010101011111111100101111110011110111011010001100111100010100000001000110100101111000010001111101000000000100010000010000000001011011000101000000010000000001000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111000110011100110001010110000001011" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="1334" timestamp="1589594696.847937" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011000100100101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111011011001100011011110" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="278395" timestamp="1589594696.8479633" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011001010100101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111011111101100110111010" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="1184" timestamp="1589594696.8479917" bits="101010101010101010101010101010101010101011111111100101111110011110111011010001100000110010100000001000110100101111000010001111101000000000100010000010000000001011011000101000000010000000001000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111000110011100110010010110100111011111" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="277743" timestamp="1589594696.8480182" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011001101100101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111001101111100100001010" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="1352" timestamp="1589594696.8480444" bits="10101010101010101010101010101010101010101111111110010111111001111011101101000110001111001010000000100011010010111100001000111110100000000010001000001000000000101101100010100000001000000000100011001110001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110101100101001101011101" decoding_index="0"/>
+      <message message_type_id="a27d9637-677c-48ec-b8d7-63288a89f4e3" modulator_index="0" pause="20677604" timestamp="1589594696.84807" bits="1010101010101010101010101010101010101010111111111001011111100111101110110100011001000010101000000010001101001011110000100011111010000000001000100000100000000010110110001010000000100000000010001100111000110011100011001110001100111000110011100011001110001100111000110011100011001110001100111011100001101100100110" decoding_index="0"/>
+   </messages>
+   <message_types>
+      <message_type name="Default" id="8bb76450-ff02-41d7-8348-a5c263a48e8b" assigned_by_ruleset="0" assigned_by_logic_analyzer="0">
+         <ruleset mode="0"/>
+      </message_type>
+      <message_type name="Pre-squawk" id="c5476bfa-914a-4326-9f29-762560f9c7b3" assigned_by_ruleset="1" assigned_by_logic_analyzer="0">
+         <ruleset mode="0">
+            <rule _Rule__start="0" _Rule__end="6" _Rule__value_type="0" operator="=" target_value="111111"/>
+         </ruleset>
+      </message_type>
+      <message_type name="Real Message" id="551269d3-ac60-4335-bf82-125c38da3526" assigned_by_ruleset="1" assigned_by_logic_analyzer="0">
+         <label name="preamble" start="0" end="29" color_index="0" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="synchronization" start="31" end="39" color_index="17" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte2" start="41" end="49" color_index="12" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte3" start="51" end="59" color_index="7" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command?" start="61" end="69" color_index="1" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="counter" start="71" end="79" color_index="2" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte1" start="81" end="89" color_index="11" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte2" start="91" end="99" color_index="10" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte3" start="101" end="109" color_index="8" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte4" start="111" end="119" color_index="9" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte4" start="121" end="129" color_index="3" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command2?" start="131" end="139" color_index="13" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte5" start="141" end="149" color_index="14" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte6" start="151" end="159" color_index="15" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command3?" start="161" end="169" color_index="4" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Brightness?" start="171" end="179" color_index="5" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command5?" start="181" end="189" color_index="6" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte7" start="191" end="199" color_index="16" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte8" start="201" end="209" color_index="22" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte8" start="211" end="219" color_index="23" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte9" start="221" end="229" color_index="24" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte10" start="231" end="239" color_index="7" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte11" start="241" end="249" color_index="12" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte12" start="251" end="259" color_index="0" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Notsure" start="261" end="269" color_index="21" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Notsure" start="271" end="279" color_index="20" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="CRC 1?" start="281" end="289" color_index="19" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="CRC 2?" start="291" end="299" color_index="18" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <ruleset mode="0">
+            <rule _Rule__start="0" _Rule__end="8" _Rule__value_type="1" operator="=" target_value="55555555"/>
+            <rule _Rule__start="31" _Rule__end="39" _Rule__value_type="0" operator="=" target_value="11111111"/>
+         </ruleset>
+      </message_type>
+      <message_type name="Lampunit message" id="a27d9637-677c-48ec-b8d7-63288a89f4e3" assigned_by_ruleset="1" assigned_by_logic_analyzer="0">
+         <label name="preamble" start="0" end="38" color_index="0" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="synchronization" start="40" end="48" color_index="17" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte2" start="50" end="58" color_index="12" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte3" start="60" end="68" color_index="7" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command?" start="70" end="78" color_index="1" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="counter" start="80" end="88" color_index="2" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte1" start="90" end="98" color_index="11" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte2" start="100" end="108" color_index="10" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte3" start="110" end="118" color_index="8" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="SN Byte4" start="120" end="128" color_index="9" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte4" start="130" end="138" color_index="3" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command2?" start="140" end="148" color_index="13" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte5" start="150" end="158" color_index="14" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte6" start="160" end="168" color_index="15" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command3?" start="170" end="178" color_index="4" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Brightness?" start="180" end="188" color_index="5" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Command5?" start="190" end="198" color_index="6" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte7" start="200" end="208" color_index="16" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte8" start="210" end="218" color_index="18" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte9" start="220" end="228" color_index="19" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte10" start="230" end="238" color_index="20" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte11" start="240" end="248" color_index="21" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte12" start="250" end="258" color_index="22" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte13" start="260" end="268" color_index="23" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte14" start="270" end="278" color_index="24" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="Somebyte15" start="280" end="288" color_index="12" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="CRC1" start="290" end="298" color_index="8" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="CRC2" start="300" end="308" color_index="5" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="1" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <ruleset mode="0">
+            <rule _Rule__start="0" _Rule__end="8" _Rule__value_type="1" operator="=" target_value="aaaaaaaa"/>
+         </ruleset>
+      </message_type>
+   </message_types>
+</protocol>
