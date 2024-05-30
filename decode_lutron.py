@@ -48,8 +48,20 @@ for msg in msgs.iter('message'):
             else:
                 pass #FIXME:  Handle trailing data differently than a non-match in the middle of a sequence if there's an error
         print(decoded)
-        if(0): # FIXME:  Make this somehow configurable, but disable CRC flailing for now
+        if(1): # FIXME:  Make this somehow configurable, but disable CRC flailing for now
             for func in crcfuncs: #Flail semi-helplessly at determining the CRC algorithm
-                print(hex(func[0](decoded_bytes[:-2])) + " " + str(func[1:]))
-                print(hex(func[0](decoded_bytes[2:-2])) + " " + str(func[1:]))
-                print(hex(func[0](decoded_bytes[3:-2])) + " " + str(func[1:]))
+                bdata = b'\xff' + decoded_bytes[:-2]
+                print(hex(func[0](bdata)) + " " + str(func[1:]))
+                print(hex(int('{:016b}'.format(func[0](bdata))[::-1], 2)) + " " + str(func[1:]))
+
+                bdata = decoded_bytes[:-2]
+                print(hex(func[0](bdata)) + " " + str(func[1:]))
+                print(hex(int('{:016b}'.format(func[0](bdata))[::-1], 2)) + " " + str(func[1:]))
+
+                bdata = decoded_bytes[2:-2]
+                print(hex(func[0](bdata)) + " " + str(func[1:]))
+                print(hex(int('{:016b}'.format(func[0](bdata))[::-1], 2)) + " " + str(func[1:]))
+
+                bdata = decoded_bytes[3:-2]
+                print(hex(func[0](bdata)) + " " + str(func[1:]))
+                print(hex(int('{:016b}'.format(func[0](bdata))[::-1], 2)) + " " + str(func[1:]))
