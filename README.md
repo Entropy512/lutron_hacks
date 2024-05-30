@@ -63,3 +63,16 @@ My dim-up remote captures appear corrupted, or the Pico does something weird whe
 
 The CRC algorithm doesn't seem to match any known CRC16 variant I've tried so far.  Although I have not tried including the sync byte as part of the CRC...
 
+From patents.txt, the following patents appear to have the most potential for relevancy:
+- US20070110192A1 - see page 11 of the PDF (listed as Sheet 10 of 26 in the patent) - However this implies Manchester encoding but the Pico is clearly sending NRZ, as we can successfully see the device address in messages using the decoder in this repo.
+- US20080111491A1
+    - Figure 3 looks a LOT like a Pico in theory of operation.
+    - Figure 5 looks like CONOPS of the lamp unit
+    - References a 442 patent, US905442, although appears to reference this as being the existing/old/too-complex system, with this patent being a simplification
+- US5905442
+    - Might be Lutron's original RadioRA?  Clear Connect Type A is referred to as RA2, Caseta, etc.  Probably a different patent?
+    - References house codes - Caseta doesn't seem to have house codes, or maybe just not if you're pairing a Pico to a single dimmer?
+- US7573208
+    - Fig 3 looks even more like a Pico in CONOPS than US20080111491A1, including transmit count
+    - References 72 bit packets, but we are seeing 208 bits for our shortest message not counting sync byte and 10 stuffing after each byte
+    - References 11/559,166, which Google resolves to US20080111491A1
