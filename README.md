@@ -1,6 +1,6 @@
 Initial attempts at reverse engineering Lutron's "Clear Connect" protocol using an SDR receiver.
 
-My sample data is too large to include in this repo, so I'll publish my settings for URH ( https://github.com/jopohl/urh ) here, along with the demodulated .proto.xml files here.  A Python script that can extract the bytes from each message is included here, and has some notes on the protocol in its comments.
+My sample data is too large to include in this repo, so I'll publish my settings for URH ( https://github.com/jopohl/urh ) here, along with the demodulated .proto.xml files here.  A Python script that can extract the bytes from each message is included here, and has some notes on the protocol in its comments.  The input file for this script is one of URH's ".proto.xml" protocol files.
 
 https://hackaday.io/project/2291-integrated-room-sunrise-simulator/log/7223-the-wireless-interface contains a lot of great info that was the starting point of my work, including the CC1150 register settings used by a Pico remote.  Also see https://github.com/CTeady/IRIS/tree/master/WirelessAnalysis from the same author
 
