@@ -76,3 +76,5 @@ From patents.txt, the following patents appear to have the most potential for re
     - Fig 3 looks even more like a Pico in CONOPS than US20080111491A1, including transmit count
     - References 72 bit packets, but we are seeing 208 bits for our shortest message not counting sync byte and 10 stuffing after each byte
     - References 11/559,166, which Google resolves to US20080111491A1
+- WO2008063283A1
+    - Appears to be internation version of US7573208, also references 7 byte serial numbers and 
