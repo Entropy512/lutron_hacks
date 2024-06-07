@@ -77,4 +77,20 @@ From patents.txt, the following patents appear to have the most potential for re
     - References 72 bit packets, but we are seeing 208 bits for our shortest message not counting sync byte and 10 stuffing after each byte
     - References 11/559,166, which Google resolves to US20080111491A1
 - WO2008063283A1
-    - Appears to be internation version of US7573208, also references 7 byte serial numbers and 
+    - Appears to be internation version of US7573208, also references 7 byte serial numbers
+
+A friendly collaborator has provided a copy of the rootfs from a Lutron bridge update.  For various reasons, I cannot post these or any of the extracted files.
+
+Communications appears to be handled via a coprocessor.  On at least one FCCID.io posting, there's an STM32 on the board.  Strings in both the "lutron-core" app (which appears to handle comms) and also the "lutron-coproc-firmware-update-app" binary indicate that comms from the host to the coprocessor is UART serial at 115200 with HDLC framing.  I haven't ghidraed them beyond that at this point.  The firmware updater app has methods for identifying the microcontroller attached, and has four embedded firmware images.  The app identifies which controller is connected, deobfuscates its corresponding firmware file, and uploads the resulting .S19 (Motorola SREC) file.  A python script in this project has the example start offset and firmware lengths for one particular version of the updater.
+
+Strings in the firmware updater app imply heavily that there are multiple MC9S08 variants in use, however as discussed before, at least one bridge appears to have an STM32.  All firmware files use AT LEAST 24-bit addressing, and two use 32-bit addressing.
+
+Headers from the four firmware files are as follows:
+- `bin/CoProcApplication/CoProcApplication.\x9b`
+    - 24-bit addressing
+- `/home/jenkins-slave/workspace/rockhopper\)`
+    - 32-bit addressing - maybe STM32 by process of elimination?  See below...
+- `/home/jenkins-slave/workspace/0-XQ6DKURP\xa4`
+    - 24-bit addressing
+- `bin/P51Application/P51Application.s19\xe1`
+    - 32-bit addressing.  Mouser returns Renesas RX24T MCUs when you give a "P51" query but this could be a red herring: https://www.mouser.com/c/semiconductors/embedded-processors-controllers/microcontrollers-mcu/32-bit-microcontrollers-mcu/?q=P51
