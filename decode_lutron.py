@@ -25,7 +25,7 @@ It appears this is a Lutron implementation mistake, or intentional to prevent ea
 We can regenerate the CRC table in the normal fashion for precomputing one from a polynomial of 0xca0f though
 ''' 
 lutron_crc = crcmod.mkCrcFun(0x1ca0f, 0, False, 0)
-crctable = [lutron_crc(j.to_bytes()) for j in range(255)]
+crctable = [lutron_crc(j.to_bytes()) for j in range(256)]
 def calc_crc(message):
     crc_reg = 0
     for j in range(len(message)):
