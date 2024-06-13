@@ -4,7 +4,7 @@ import spidev
 import serial
 import crcmod
 from enum import Enum
-from time import sleep
+import time
 
 '''
 This lookup table and algorithm pulled from the STM32 communication coprocessor firmware of a Caseta bridge
@@ -75,7 +75,6 @@ Fosc * (8 + M) * 2^E / 2^17 = 41.2 kHz
 '''
 #Reset CC1101
 spi.xfer([0x30])
-sleep(0.1)
 #Transition CC1101 to IDLE, probably unnecessary since we should be in IDLE after reset, but better safe than sorry
 spi.xfer([0x36])
 spi.xfer([0x40, 0xd, 0, 0, 0, 0, 0, 0, 0, 0x32, 0, 0])
@@ -104,6 +103,7 @@ ser.reset_input_buffer() #Flush the input buffer
 #Ser up our state machine - last two bytes read and our state variable
 charbuf = [b'\x00', b'\x00']
 state = RxState.AWAITING_PREFIX
+lasttime = time.time_ns()
 while(True):
     inbyte = ser.read(1)
     match state:
@@ -126,5 +126,10 @@ while(True):
             if(pktcnt == 0):
                 calculated_crc = calc_crc(message[2:-2])
                 message_crc = (message[-2] << 8) + message[-1]
-                print(message.hex(' ') + ', CRC Match is ' + str(calculated_crc == message_crc))
+                nowtime = time.time_ns()
+                tdelt = (nowtime - lasttime)/1e6 #Milliseconds since last message
+                lasttime = nowtime
+                if(tdelt > 1500):
+                    print() # put a space between captures with large time (1.5s) in between
+                print('{: 10.2f} '.format(tdelt) + message.hex(' ') + ', CRC Match is ' + str(calculated_crc == message_crc))
                 state = RxState.AWAITING_PREFIX
