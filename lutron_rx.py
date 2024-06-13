@@ -89,7 +89,8 @@ spi.xfer([0x18, 0x10])
 spi.xfer([0x34])
 
 #Print out our registers for now
-print([hex(j) for j in spi.xfer([0xc0] + [0] * 0x21)[1:]])
+if(0):
+    print([hex(j) for j in spi.xfer([0xc0] + [0] * 0x21)[1:]])
 
 '''
 Pi 4 is weird - the "Mini UART" is the primary one, and the "full featured" one is BT - opposite of most other Pis
