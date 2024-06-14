@@ -114,7 +114,7 @@ while(True):
             #Our last two bytes were Lutron's prefix (0xFADE), transition our state machine
             if(charbuf[0] == b'\xfa' and charbuf[1] == b'\xde'):
                 state = RxState.AWAITING_CMDBYTE
-            message = b'\xfa\xde'
+            message = b''
         case RxState.AWAITING_CMDBYTE:
             #Command byte is starting to look like a misnomer...
             pktcnt = get_pktlen_from_command(inbyte[0]) - 1
@@ -125,7 +125,7 @@ while(True):
             pktcnt -= 1
             message += inbyte
             if(pktcnt == 0):
-                calculated_crc = calc_crc(message[2:-2])
+                calculated_crc = calc_crc(message[:-2])
                 message_crc = (message[-2] << 8) + message[-1]
                 nowtime = time.time_ns()
                 tdelt = (nowtime - lasttime)/1e6 #Milliseconds since last message
