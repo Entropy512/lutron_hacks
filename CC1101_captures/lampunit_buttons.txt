@@ -1,0 +1,128 @@
+#Various button presses on a lamp unit PD-3PCL
+#It does not respond on air to any Pico commands, and so without a Caseta bridge there is no way to know
+#how to query it unless we have massive luck with Ghidra and the Caseta bridge firmware
+#Off
+   5531.09 8a 00 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 3c 31
+     75.02 8a 06 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc ec b8
+     74.96 8a 0c 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 57 2c
+     74.95 8a 12 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 51 9f
+     75.04 8a 18 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc ea 0b
+     75.01 8a 1e 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 3a 82
+     74.98 8a 24 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc e7 6d
+     74.99 8a 2a 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc c3 f7
+     75.05 8a 30 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 5a 4a
+     74.97 8a 36 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 8a c3
+     74.98 8a 3c 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc 31 57
+     75.04 8a 42 01 2c 0f 7c 00 04 00 1b 01 00 cc cc cc cc cc cc cc cc cc cc fb 12
+
+#On
+   6582.77 8b 00 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 17 9f
+     75.01 8b 06 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc c7 16
+     74.94 8b 0c 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 7c 82
+     74.98 8b 12 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 7a 31
+     75.04 8b 18 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc c1 a5
+     75.00 8b 1e 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 11 2c
+     74.99 8b 24 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc cc c3
+     75.00 8b 2a 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc e8 59
+     75.01 8b 30 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 71 e4
+     75.00 8b 36 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc a1 6d
+     74.99 8b 3c 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 1a f9
+     74.99 8b 42 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc d0 bc
+
+#Brief tap of dim down
+   5474.21 89 00 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc ec 8e
+     74.96 89 06 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 3c 07
+     75.00 89 0c 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 87 93
+     75.02 89 12 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 81 20
+     74.93 89 18 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 3a b4
+     75.06 89 1e 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc ea 3d
+     74.93 89 24 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 37 d2
+     75.08 89 2a 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 13 48
+     75.00 89 30 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 8a f5
+     74.96 89 36 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 5a 7c
+     74.98 89 3c 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc e1 e8
+     75.05 89 42 01 2c 0f 7c 00 04 00 1b 01 f8 cc cc cc cc cc cc cc cc cc cc 2b ad
+
+#Longer hold of dim down.  A message is not sent until the button is release
+   4544.68 8a 00 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 2b 6d
+     74.98 8a 06 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc fb e4
+     74.96 8a 0c 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 40 70
+     75.02 8a 12 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 46 c3
+     74.97 8a 18 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc fd 57
+     75.02 8a 1e 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 2d de
+     75.02 8a 24 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc f0 31
+     74.96 8a 2a 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc d4 ab
+     74.98 8a 30 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 4d 16
+     75.04 8a 36 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 9d 9f
+     74.98 8a 3c 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc 26 0b
+     74.96 8a 42 01 2c 0f 7c 00 04 00 1b 01 38 cc cc cc cc cc cc cc cc cc cc ec 4e
+
+#More dim down
+   5056.48 8b 00 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc af 10
+     74.97 8b 06 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc 7f 99
+     75.02 8b 0c 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc c4 0d
+     74.99 8b 12 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc c2 be
+     75.00 8b 18 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc 79 2a
+     75.01 8b 1e 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc a9 a3
+     74.96 8b 24 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc 74 4c
+     74.97 8b 2a 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc 50 d6
+     75.08 8b 30 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc c9 6b
+     74.97 8b 36 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc 19 e2
+     74.97 8b 3c 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc a2 76
+     75.08 8b 42 01 2c 0f 7c 00 04 00 1b 01 1f cc cc cc cc cc cc cc cc cc cc 68 33
+
+#Dim down even more
+   5481.29 89 00 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 5e 5e
+     74.97 89 06 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 8e d7
+     74.97 89 0c 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 35 43
+     75.02 89 12 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 33 f0
+     75.01 89 18 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 88 64
+     74.92 89 1e 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 58 ed
+     75.03 89 24 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 85 02
+     75.03 89 2a 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc a1 98
+     75.00 89 30 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 38 25
+     75.02 89 36 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc e8 ac
+     74.96 89 3c 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 53 38
+     74.98 89 42 01 2c 0f 7c 00 04 00 1b 01 07 cc cc cc cc cc cc cc cc cc cc 99 7d
+
+#Dimming back up
+   4309.84 8a 00 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc d1 82
+     74.98 8a 06 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc 01 0b
+     74.97 8a 0c 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc ba 9f
+     75.03 8a 12 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc bc 2c
+     74.99 8a 18 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc 07 b8
+     75.02 8a 1e 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc d7 31
+     74.95 8a 24 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc 0a de
+     75.04 8a 2a 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc 2e 44
+     74.95 8a 30 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc b7 f9
+     75.05 8a 36 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc 67 70
+     74.97 8a 3c 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc dc e4
+     75.00 8a 42 01 2c 0f 7c 00 04 00 1b 01 19 cc cc cc cc cc cc cc cc cc cc 16 a1
+
+#Up more
+   3942.46 8b 00 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 62 62
+     74.97 8b 06 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc b2 eb
+     75.01 8b 0c 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 09 7f
+     75.00 8b 12 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 0f cc
+     74.99 8b 18 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc b4 58
+     74.98 8b 1e 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 64 d1
+     75.00 8b 24 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc b9 3e
+     75.03 8b 2a 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 9d a4
+     75.01 8b 30 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 04 19
+     74.96 8b 36 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc d4 90
+     75.01 8b 3c 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc 6f 04
+     74.97 8b 42 01 2c 0f 7c 00 04 00 1b 01 64 cc cc cc cc cc cc cc cc cc cc a5 41
+
+#Hold up until all the way on
+   2303.25 89 00 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc ee 9d
+     74.94 89 06 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 3e 14
+     75.03 89 0c 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 85 80
+     74.92 89 12 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 83 33
+     75.06 89 18 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 38 a7
+     75.00 89 1e 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc e8 2e
+     75.00 89 24 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 35 c1
+     74.99 89 2a 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 11 5b
+     74.99 89 30 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 88 e6
+     75.00 89 36 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 58 6f
+     74.98 89 3c 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc e3 fb
+     74.96 89 42 01 2c 0f 7c 00 04 00 1b 01 fe cc cc cc cc cc cc cc cc cc cc 29 be
