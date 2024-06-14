@@ -132,5 +132,6 @@ while(True):
                 lasttime = nowtime
                 if(tdelt > 1500):
                     print() # put a space between captures with large time (1.5s) in between
-                print('{: 10.2f} '.format(tdelt) + message.hex(' ') + ', CRC Match is ' + str(calculated_crc == message_crc))
+                if(calculated_crc == message_crc):
+                    print('{: 10.2f} '.format(tdelt) + message.hex(' '))
                 state = RxState.AWAITING_PREFIX
