@@ -27,12 +27,12 @@ def calc_crc(message):
 
 #This is the exact algorithm used by the STM32 communications coprocessor of the Caseta bridge
 def get_pktlen_from_command(cmdbyte):
-    if(cmdbyte & 0xc0 == 0):
+    if(cmdbyte & 0xc0 == 0):  #I've never seen these on the air - Possibly legacy RadioRA 2, not "RA2 Select"?
         return 5
-    elif(cmdbyte & 0xe0 == 0xa0):
+    elif(cmdbyte & 0xe0 == 0xa0): #Pico pairing requests
         return 0x35
     else:
-        return 0x18
+        return 0x18 #All other Pico comms, lamp unit status
 
 #Receive state machine states - this is similar to Lutron's STM32 implementation
 RxState = Enum('RxState', ['AWAITING_PREFIX', 'AWAITING_CMDBYTE', 'GOT_CMDBYTE'])
