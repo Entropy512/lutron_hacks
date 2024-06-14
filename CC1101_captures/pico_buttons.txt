@@ -1,0 +1,142 @@
+#PJ2-3BRL Pico remote with dim
+#Each button pressed for >2 seconds, >2 seconds between buttons
+#Button 1 doesn't seem to exist
+#Button 2 (On) press
+   2660.22 88 00 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 61 41, CRC Match is True
+     74.99 88 06 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc b1 c8, CRC Match is True
+     75.02 88 0c 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 0a 5c, CRC Match is True
+     75.01 88 12 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 0c ef, CRC Match is True
+     74.94 88 18 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc b7 7b, CRC Match is True
+     75.02 88 1e 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 67 f2, CRC Match is True
+     74.93 88 24 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc ba 1d, CRC Match is True
+     75.05 88 2a 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 9e 87, CRC Match is True
+     75.00 88 30 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 07 3a, CRC Match is True
+     74.99 88 36 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc d7 b3, CRC Match is True
+     74.97 88 3c 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc 6c 27, CRC Match is True
+     75.01 88 42 02 a2 4c 77 21 04 03 00 02 00 cc cc cc cc cc cc cc cc cc cc a6 62, CRC Match is True
+
+#Button 2 (On) release
+   2699.84 89 00 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 43 6b, CRC Match is True
+     75.00 89 06 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 93 e2, CRC Match is True
+     74.90 89 0c 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 28 76, CRC Match is True
+     75.10 89 12 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 2e c5, CRC Match is True
+     75.02 89 18 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 95 51, CRC Match is True
+     74.94 89 1e 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 45 d8, CRC Match is True
+     75.03 89 24 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 98 37, CRC Match is True
+     75.00 89 2a 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 bc ad, CRC Match is True
+     75.02 89 30 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 25 10, CRC Match is True
+     74.99 89 36 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 f5 99, CRC Match is True
+     74.99 89 3c 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 4e 0d, CRC Match is True
+     74.99 89 42 02 a2 4c 77 21 0e 03 00 02 01 02 a2 4c 77 00 40 00 20 00 00 84 48, CRC Match is True
+
+#Button 3 (Preset/Middle) press
+   2790.13 8a 00 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 60 c3, CRC Match is True
+     74.98 8a 06 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc b0 4a, CRC Match is True
+     75.00 8a 0c 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 0b de, CRC Match is True
+     74.95 8a 12 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 0d 6d, CRC Match is True
+     74.96 8a 18 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc b6 f9, CRC Match is True
+     74.97 8a 1e 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 66 70, CRC Match is True
+     75.03 8a 24 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc bb 9f, CRC Match is True
+     75.05 8a 2a 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 9f 05, CRC Match is True
+     74.97 8a 30 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 06 b8, CRC Match is True
+     75.00 8a 36 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc d6 31, CRC Match is True
+     74.98 8a 3c 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc 6d a5, CRC Match is True
+     75.00 8a 42 02 a2 4c 77 21 04 03 00 03 00 cc cc cc cc cc cc cc cc cc cc a7 e0, CRC Match is True
+
+#Button 3 (Preset/Middle) release
+   2699.67 8b 00 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 88 e6, CRC Match is True
+     74.95 8b 06 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 58 6f, CRC Match is True
+     75.02 8b 0c 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 e3 fb, CRC Match is True
+     74.97 8b 12 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 e5 48, CRC Match is True
+     75.03 8b 18 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 5e dc, CRC Match is True
+     75.00 8b 1e 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 8e 55, CRC Match is True
+     74.94 8b 24 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 53 ba, CRC Match is True
+     75.07 8b 2a 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 77 20, CRC Match is True
+     74.96 8b 30 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 ee 9d, CRC Match is True
+     75.00 8b 36 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 3e 14, CRC Match is True
+     75.04 8b 3c 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 85 80, CRC Match is True
+     75.01 8b 42 02 a2 4c 77 21 0e 03 00 03 01 02 a2 4c 77 00 40 00 21 00 00 4f c5, CRC Match is True
+
+#Button 4 (Off) press
+   2357.79 88 00 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 2c 50, CRC Match is True
+     75.04 88 06 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc fc d9, CRC Match is True
+     74.99 88 0c 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 47 4d, CRC Match is True
+     74.97 88 12 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 41 fe, CRC Match is True
+     74.97 88 18 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc fa 6a, CRC Match is True
+     75.03 88 1e 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 2a e3, CRC Match is True
+     75.00 88 24 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc f7 0c, CRC Match is True
+     74.93 88 2a 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc d3 96, CRC Match is True
+     75.03 88 30 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 4a 2b, CRC Match is True
+     74.97 88 36 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 9a a2, CRC Match is True
+     75.03 88 3c 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc 21 36, CRC Match is True
+     75.00 88 42 02 a2 4c 77 21 04 03 00 04 00 cc cc cc cc cc cc cc cc cc cc eb 73, CRC Match is True
+
+#Button 4 (Off) release
+   2549.80 89 00 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 50 6b, CRC Match is True
+     74.93 89 06 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 80 e2, CRC Match is True
+     75.03 89 0c 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 3b 76, CRC Match is True
+     74.99 89 12 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 3d c5, CRC Match is True
+     75.04 89 18 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 86 51, CRC Match is True
+     74.91 89 1e 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 56 d8, CRC Match is True
+     75.13 89 24 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 8b 37, CRC Match is True
+     74.90 89 2a 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 af ad, CRC Match is True
+     75.03 89 30 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 36 10, CRC Match is True
+     74.98 89 36 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 e6 99, CRC Match is True
+     74.98 89 3c 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 5d 0d, CRC Match is True
+     75.06 89 42 02 a2 4c 77 21 0e 03 00 04 01 02 a2 4c 77 00 40 00 22 00 00 97 48, CRC Match is True
+
+#Button 5 (Dim Up) press
+   2424.07 8a 00 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc a2 a7, CRC Match is True
+     75.02 8a 06 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc 72 2e, CRC Match is True
+     74.99 8a 0c 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc c9 ba, CRC Match is True
+     75.03 8a 12 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc cf 09, CRC Match is True
+     74.94 8a 18 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc 74 9d, CRC Match is True
+     75.04 8a 1e 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc a4 14, CRC Match is True
+     75.04 8a 24 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc 79 fb, CRC Match is True
+     74.91 8a 2a 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc 5d 61, CRC Match is True
+     75.07 8a 30 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc c4 dc, CRC Match is True
+     75.00 8a 36 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc 14 55, CRC Match is True
+     74.93 8a 3c 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc af c1, CRC Match is True
+     75.02 8a 42 02 a2 4c 77 21 0c 03 00 05 00 02 a2 4c 77 00 42 00 03 cc cc 65 84, CRC Match is True
+
+#Button 5 (Dim Up) release
+   2099.86 8b 00 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 ea 38, CRC Match is True
+     74.89 8b 06 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 3a b1, CRC Match is True
+     74.99 8b 0c 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 81 25, CRC Match is True
+     75.06 8b 12 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 87 96, CRC Match is True
+     74.91 8b 18 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 3c 02, CRC Match is True
+     75.09 8b 1e 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 ec 8b, CRC Match is True
+     74.92 8b 24 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 31 64, CRC Match is True
+     75.11 8b 2a 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 15 fe, CRC Match is True
+     74.97 8b 30 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 8c 43, CRC Match is True
+     74.96 8b 36 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 5c ca, CRC Match is True
+     74.97 8b 3c 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 e7 5e, CRC Match is True
+     75.05 8b 42 02 a2 4c 77 21 0e 03 00 05 01 02 a2 4c 77 00 42 02 01 01 33 2d 1b, CRC Match is True
+
+#Button 6 (Dim Down) press
+   2260.94 88 00 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 52 25, CRC Match is True
+     74.95 88 06 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 82 ac, CRC Match is True
+     75.04 88 0c 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 39 38, CRC Match is True
+     74.91 88 12 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 3f 8b, CRC Match is True
+     75.04 88 18 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 84 1f, CRC Match is True
+     75.08 88 1e 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 54 96, CRC Match is True
+     74.96 88 24 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 89 79, CRC Match is True
+     74.97 88 2a 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc ad e3, CRC Match is True
+     75.00 88 30 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 34 5e, CRC Match is True
+     75.05 88 36 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc e4 d7, CRC Match is True
+     75.00 88 3c 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 5f 43, CRC Match is True
+     74.91 88 42 02 a2 4c 77 21 0c 03 00 06 00 02 a2 4c 77 00 42 00 02 cc cc 95 06, CRC Match is True
+
+#Button 6 (Dim Down) release
+   2099.93 89 00 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 1a ba, CRC Match is True
+     74.98 89 06 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 ca 33, CRC Match is True
+     75.04 89 0c 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 71 a7, CRC Match is True
+     74.98 89 12 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 77 14, CRC Match is True
+     74.99 89 18 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 cc 80, CRC Match is True
+     74.99 89 1e 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 1c 09, CRC Match is True
+     75.05 89 24 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 c1 e6, CRC Match is True
+     74.98 89 2a 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 e5 7c, CRC Match is True
+     75.02 89 30 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 7c c1, CRC Match is True
+     74.90 89 36 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 ac 48, CRC Match is True
+     75.08 89 3c 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 17 dc, CRC Match is True
+     75.00 89 42 02 a2 4c 77 21 0e 03 00 06 01 02 a2 4c 77 00 42 02 00 01 33 dd 99, CRC Match is True
