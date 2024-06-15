@@ -5,6 +5,7 @@ import serial
 import crcmod
 from enum import Enum
 import time
+import numpy as np
 
 '''
 This lookup table and algorithm pulled from the STM32 communication coprocessor firmware of a Caseta bridge
@@ -39,7 +40,8 @@ RxState = Enum('RxState', ['AWAITING_PREFIX', 'AWAITING_CMDBYTE', 'GOT_CMDBYTE']
 
 spi = spidev.SpiDev()
 spi.open(0,0)  #SPI bus 0 device 0 on my Pi4
-spi.max_speed_hz = 55700 # can probably bump this up a bit in a setup with shorter wires
+#Default SPI speed is 125 MHz which is WAY too high
+spi.max_speed_hz = 1000000 # can probably bump this up a bit in a setup with shorter wires
 '''
 Set a bunch of CC1101 registers - many of these are based on https://hackaday.io/project/2291-integrated-room-sunrise-simulator/log/7223-the-wireless-interface
 with some changes for async serial TX/RX
@@ -114,24 +116,29 @@ while(True):
             #Our last two bytes were Lutron's prefix (0xFADE), transition our state machine
             if(charbuf[0] == b'\xfa' and charbuf[1] == b'\xde'):
                 state = RxState.AWAITING_CMDBYTE
+            #FIXME:  We shouldn't be baseball-batting these constantly
             message = b''
+            rssiBuffer = []
         case RxState.AWAITING_CMDBYTE:
             #Command byte is starting to look like a misnomer...
             pktcnt = get_pktlen_from_command(inbyte[0]) - 1
             message += inbyte
             state = RxState.GOT_CMDBYTE
+            rssiBuffer.append(spi.xfer([0xf4, 0x00])[1])
         case RxState.GOT_CMDBYTE:
             # Keep receiving bytes until we get all of our packets
             pktcnt -= 1
             message += inbyte
+            rssiBuffer.append(spi.xfer([0xf4, 0x00])[1])
             if(pktcnt == 0):
                 calculated_crc = calc_crc(message[:-2])
                 message_crc = (message[-2] << 8) + message[-1]
                 nowtime = time.time_ns()
                 tdelt = (nowtime - lasttime)/1e6 #Milliseconds since last message
                 lasttime = nowtime
+                rssiMean = np.mean(np.array(rssiBuffer))
                 if(tdelt > 1500):
                     print() # put a space between captures with large time (1.5s) in between
                 if(calculated_crc == message_crc):
-                    print('{: 10.2f} '.format(tdelt) + message.hex(' '))
+                    print('{: 10.2f} '.format(tdelt) + '{:5.1f} '.format(rssiMean) + message.hex(' '))
                 state = RxState.AWAITING_PREFIX
